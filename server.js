@@ -22,7 +22,5 @@ app.get('/', async(req, res) => {
 
 app.use('/articles', articleRouter)
 
-app.listen(5000, (req, res) => {
 
-    console.log('server is running on http://localhost:5000')
-})
+app.listen(process.env.PORT || 3000);
